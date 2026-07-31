@@ -95,12 +95,14 @@ The trained model (`best.pt`) is loaded directly from the local repository for b
 
 ---
 ## Performance Summary
+Performance was evaluated using an unseen validation dataset consisting of 93 images across 15 waste categories.
+
 ### a. Validation Performance
 Accuracy : 69.89%
 Macro F1 : 69.39%
 Weighted F1 : 69.71%
 
-### b. Test Performance\
+### b. Test Performance
 Accuracy : 58.70%
 Macro F1 : 56.76%
 Weighted F1 : 56.61%
@@ -127,4 +129,4 @@ Weighted F1 : 56.61%
 ---
 ## Skills Demonstrated
 - Transfer Learning
-- PyTorch Model Deployment
+- PyTorch Model Deployment 
