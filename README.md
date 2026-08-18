@@ -102,12 +102,17 @@ The training and validation curves show the model's learning progression across 
 
 ---
 ## Performance Summary
-Performance was evaluated using an unseen validation dataset consisting of 93 images across 15 waste categories.
+The model was evaluated on both validation and test datasets to measure its ability to generalize to unseen data.
 
 ### a. Validation Performance
-Accuracy : 69.89%
-Macro F1 : 69.39%
-Weighted F1 : 69.71%
+The model was evaluated on 93 validation images across 15 waste categories.
+| Metric | Score |
+|---|---:|
+| Accuracy | **69.89%** |
+| Macro F1 Score | **69.39%** |
+| Weighted F1 Score | **69.71%** |
+![Validation Classification Report](assets/Validation_Summary.JPG)
+![Validation Classification Report](assets/Validation_Summary_accuracy and F1.JPG)
 
 ### b. Test Performance
 Accuracy : 58.70%
