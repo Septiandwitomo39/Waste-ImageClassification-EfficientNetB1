@@ -37,6 +37,15 @@ install Dependencies :
 pip install -r requirements.txt
 
 ---
+## Dataset
+
+The dataset used in this project is included in `dataset_trial.zip` for educational and reproducibility purposes.
+
+The dataset contains 15 waste categories and was used for training, validation, and testing.
+
+> The dataset is provided for educational purposes as part of this project.
+
+---
 ## Usage
 ### a. Run Model Evaluation
 Evaluate the trained model on the validation or test dataset.
@@ -126,25 +135,58 @@ The model was further evaluated on 46 unseen test images across 15 waste categor
 ![Test Classification Report](assets/Test_Summary.JPG)
 
 ---
-## Key Insights
-- EfficientNet-B1 performs reasonably well on a relatively small dataset.
-- Strong performance on visually distinct waste categories.
-- Most misclassifications occur between visually similar plastic and glass objects.
-- Test performance indicates room for improvement through larger datasets and additional fine-tuning.
+## Confusion Matrix
+### Validation Set
+The confusion matrix below shows the prediction distribution across the 15 waste categories on the validation dataset.
+![Validation Confusion Matrix](assets/Validation_Confusion.png)
 
+### Test Set
+The confusion matrix below shows the prediction distribution across the 15 waste categories on the unseen test dataset.
+![Test Confusion Matrix](assets/Test_Confusion.png)
+
+---
+## Key Insights
+- EfficientNet-B1 achieved **69.89% validation accuracy** and **58.70% test accuracy** across 15 waste categories.
+- The model performs better on visually distinctive categories, while several visually similar or less-represented categories remain challenging.
+- The drop in performance from validation to test data indicates that the model's generalization to unseen images can still be improved.
+- Class-level performance varies considerably, as shown by the classification reports and confusion matrices.
+- Increasing dataset size and diversity is likely to improve model robustness and generalization.
+  
 ---
 ## Limitation
-- Small dataset (~21 training images per class on average)
-
+- Relatively small dataset (~21 training images per class on average)
+- Limited image diversity across some waste categories
+- Performance drops on unseen test images
+- Visually similar categories remain challenging for the model
+  
 ---
 ## Future Improvements
-- Increase dataset size
-- Improve class balance
-- Compare with additional CNN architectures
-- Build web application using Gradio
-- Deploy to Hugging Face Spaces
+- Increase dataset size and image diversity
+- Improve class balance across categories
+- Experiment with additional CNN architectures
+- Develop a web-based inference application using Gradio
+- Deploy the application to Hugging Face Spaces
 
 ---
 ## Skills Demonstrated
-- Transfer Learning
-- PyTorch Model Deployment 
+- Computer Vision — Multi-class Image Classification
+- Transfer Learning with EfficientNet-B1
+- PyTorch Model Development & Deployment
+- Dataset Preparation & Image Preprocessing
+- Data Augmentation
+- Model Evaluation
+- Classification Report & Confusion Matrix Analysis
+- Precision, Recall & F1-Score Analysis
+- Local Offline Inference
+- Python Application Development with Tkinter
+- Git & GitHub Project Management
+
+---
+## 👤 Author
+
+### Septian Dwitomo
+
+Computer Vision Enthusiast | AI Engineer in Progress
+
+- GitHub: [@Septiandwitomo39](https://github.com/Septiandwitomo39)
+- Focus: Computer Vision, Image Classification, and Machine Learning
