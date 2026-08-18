@@ -94,6 +94,13 @@ The trained model (`best.pt`) is loaded directly from the local repository for b
 - Input Size : 224 × 224
 
 ---
+## 📈 Training Performance
+
+The training and validation curves show the model's learning progression across 50 training epochs.
+
+![Training Performance](assets/training_summary.jpg)
+
+---
 ## Performance Summary
 Performance was evaluated using an unseen validation dataset consisting of 93 images across 15 waste categories.
 
