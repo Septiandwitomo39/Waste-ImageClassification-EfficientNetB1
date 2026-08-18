@@ -112,7 +112,7 @@ The model was evaluated on 93 validation images across 15 waste categories.
 | Macro F1 Score | **69.39%** |
 | Weighted F1 Score | **69.71%** |
 ![Validation Classification Report](assets/Validation_Summary.JPG)
-![Validation Classification Report](assets/Validation_Summary_accuracy and F1.JPG)
+![Validation Classification Report](assets/Validation_Summary_Accuracy_and_F1.JPG)
 
 ### b. Test Performance
 Accuracy : 58.70%
